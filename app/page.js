@@ -1,6 +1,25 @@
-import Image from 'next/image'
+"use client";
+
+import { Background } from "@/components";
 
 export default function Home() {
+  return (
+    <main>
+      <Background
+        src="/background.png"
+        alt="family brushing teeth"
+        height="512"
+        width="768"
+      />
+      <Background
+        src="/CEREC_One_Visit.jpg"
+        alt="CEREC One Day Crowns"
+        height="90"
+        width="728"
+      />
+    </main>
+  );
+  /*
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -110,4 +129,5 @@ export default function Home() {
       </div>
     </main>
   )
+  */
 }
